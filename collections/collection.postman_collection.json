@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "171441ce-ad1c-4d53-afce-d8f34d67d6db",
+		"name": "collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2863366"
+	},
+	"item": [
+		{
+			"name": "get album photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/photos/getallphotos?_page=2&_limit=10&albumId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"photos",
+						"getallphotos"
+					],
+					"query": [
+						{
+							"key": "_page",
+							"value": "2"
+						},
+						{
+							"key": "_limit",
+							"value": "10"
+						},
+						{
+							"key": "albumId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all albums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/photos/getallalbum?_page=1&_limit=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"photos",
+						"getallalbum"
+					],
+					"query": [
+						{
+							"key": "_page",
+							"value": "1"
+						},
+						{
+							"key": "_limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
